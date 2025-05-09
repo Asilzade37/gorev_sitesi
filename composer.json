@@ -1,0 +1,13 @@
+{
+    "name": "myapp/gorev-sitesi",
+    "description": "Görev yaparak para kazanma sistemi",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

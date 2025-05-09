@@ -1,0 +1,239 @@
+:root {
+    /* Theme Colors */
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    
+    /* Background Colors */
+    --bg-sidebar: #1a1d21;
+    --bg-content: #f8f9fa;
+    --bg-white: #ffffff;
+    
+    /* Text Colors */
+    --text-light: #ffffff;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    
+    /* Layout */
+    --sidebar-width: 250px;
+    --header-height: 60px;
+}
+
+/* Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-content);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-width);
+    background: var(--bg-sidebar);
+    color: var(--text-light);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Sidebar Brand */
+.sidebar-header {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.brand {
+    color: var(--text-light);
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.nav-menu {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0.25rem 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link i:first-child {
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.nav-link .bi-chevron-down {
+    margin-left: auto;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+}
+
+/* Submenu */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.submenu.show {
+    max-height: 500px; /* Yeterince büyük bir değer */
+}
+
+.submenu .nav-link {
+    padding-left: 3rem !important;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Ok İkonu Animasyonu */
+.bi-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.bi-chevron-down.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: var(--sidebar-width);
+    padding: 2rem;
+}
+
+/* Page Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Table Styles */
+.table {
+    background: var(--bg-white);
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+}
+
+/* Status Badge */
+.badge {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+.badge-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+/* Action Buttons */
+.btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+    margin: 0 0.125rem;
+}
+
+.btn-edit {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-delete {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* New Task Button */
+.btn-new {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-new i {
+    font-size: 1.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+/* Card Styles */
+.card {
+    background: var(--bg-white);
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
+}
+
+.card-body {
+    padding: 1.5rem;
+}

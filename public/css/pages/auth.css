@@ -1,0 +1,117 @@
+/* ============================================= */
+/* Auth Sayfaları Stilleri */
+/* ============================================= */
+
+/* Auth Layout */
+.auth-layout {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Auth Container */
+.auth-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: -30px;
+}
+
+/* Auth Card */
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-card .card {
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card .card-body {
+    padding: 15px;
+}
+
+/* Auth Title */
+.auth-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Auth Form */
+.auth-form .form-group {
+    margin-bottom: 16px;
+}
+
+.auth-form .form-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.auth-form .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    transition: var(--transition-base);
+}
+
+.auth-form .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.1);
+}
+
+/* Auth Form Button */
+.auth-form .btn {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Auth Links */
+.auth-links {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.auth-links a {
+    color: var(--secondary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.auth-links a:hover {
+    color: var(--primary);
+}
+
+/* Alert Styles */
+.alert {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 576px) {
+    .auth-card .card-body {
+        padding: 24px;
+    }
+
+    .auth-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+} 

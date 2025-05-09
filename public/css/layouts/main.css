@@ -1,0 +1,66 @@
+/* Main Layout */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--dark);
+    background-color: #f5f7fb;
+}
+
+/* Admin Layout */
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-layout .content {
+    flex: 1;
+    padding: var(--content-padding);
+    margin-left: var(--sidebar-width);
+}
+
+/* User Layout */
+.user-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.user-layout .content {
+    flex: 1;
+    padding: var(--content-padding);
+    margin-top: var(--header-height);
+}
+
+/* Container */
+.container-fluid {
+    padding-right: var(--spacing-3);
+    padding-left: var(--spacing-3);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--dark);
+    margin-bottom: var(--spacing-4);
+}
+
+/* Utilities */
+.bg-gradient-primary {
+    background: linear-gradient(45deg, var(--primary), #0a58ca);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(45deg, var(--success), #157347);
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(45deg, var(--warning), #cc9a06);
+}
+
+.bg-gradient-info {
+    background: linear-gradient(45deg, var(--info), #0aa2c0);
+} 

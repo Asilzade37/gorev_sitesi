@@ -1,0 +1,160 @@
+Folder PATH listing
+Volume serial number is C0B3-A89D
+C:.
+|   .htaccess
+|   admin_password.php
+|   composer.json
+|   composer.lock
+|   liste.cmd
+|   style.css
+|   tree.txt
+|   
++---app
+|   +---config
+|   |       config.php
+|   |       database.php
+|   |       
+|   +---Controllers
+|   |       AdminController.php
+|   |       AuthController.php
+|   |       HomeController.php
+|   |       TaskController.php
+|   |       UserController.php
+|   |       
+|   +---Core
+|   |       Controller.php
+|   |       Database.php
+|   |       Model.php
+|   |       Router.php
+|   |       
+|   +---database
+|   |       schema.sql
+|   |       
+|   +---Models
+|   |       Category.php
+|   |       Task.php
+|   |       TaskSubmission.php
+|   |       User.php
+|   |       
+|   \---views
+|       +---admin
+|       |       categories.php
+|       |       category-form.php
+|       |       category_form.php
+|       |       dashboard.php
+|       |       tasks.php
+|       |       tasks_submissions.php
+|       |       task_form.php
+|       |       
+|       +---auth
+|       |       login.php
+|       |       register.php
+|       |       
+|       +---home
+|       |       index.php
+|       |       
+|       +---layouts
+|       |       admin.php
+|       |       default.php
+|       |       user.php
+|       |       
+|       \---user
+|               completed_tasks.php
+|               dashboard.php
+|               pending_tasks.php
+|               profile.php
+|               tasks.php
+|               task_detail.php
+|               
++---public
+|   |   .htaccess
+|   |   index.php
+|   |   
+|   +---assets
+|   |   +---css
+|   |   |       auth1.css
+|   |   |       style1.css
+|   |   |       
+|   |   +---img
+|   |   |       default-avatar.png.png
+|   |   |       
+|   |   \---js
+|   |           admin.js
+|   |           main.js
+|   |           
+|   +---css
+|   |   |   main.css
+|   |   |   
+|   |   +---base
+|   |   |       variables.css
+|   |   |       
+|   |   +---components
+|   |   +---layouts
+|   |   |       main.css
+|   |   |       
+|   |   \---pages
+|   |       |   auth.css
+|   |       |   home.css
+|   |       |   panel.css
+|   |       |   
+|   |       \---admin
+|   |               admin.css
+|   |               user.css
+|   |               
+|   \---uploads
+|       +---categories
+|       |       67b732be0f305.jpg
+|       |       67b732c8b46ea.jpg
+|       |       
+|       +---category_images
+|       |       67b62a285a549.jpg
+|       |       67b62a5c8bfab.jpg
+|       |       67b62a7771246.jpg
+|       |       67b62acbb991b.jpg
+|       |       67b63d00128a9.jpg
+|       |       67b644abc569f.jpg
+|       |       
+|       \---task_proofs
+|               67b64f2a1b7e7.jpg
+|               67b64f7ddaf3d.jpg
+|               67b64fe8cb449.jpg
+|               67b64ff284f33.jpg
+|               67b6504cc1a9a.jpg
+|               67b650a626cd2.jpg
+|               67b6512127c1e.png
+|               67b652634ad7c.png
+|               67b82d939e89f.jpg
+|               
++---vendor
+|   |   autoload.php
+|   |   
+|   \---composer
+|           autoload_classmap.php
+|           autoload_namespaces.php
+|           autoload_psr4.php
+|           autoload_real.php
+|           autoload_static.php
+|           ClassLoader.php
+|           installed.json
+|           installed.php
+|           InstalledVersions.php
+|           LICENSE
+|           platform_check.php
+|           
+\---xampp
+    \---htdocs
+        \---gorev_sitesi
+            |   .htaccess
+            |   composer.json
+            |   
+            +---app
+            |   +---Controllers
+            |   |       HomeController.php
+            |   |       
+            |   \---Core
+            |           Router.php
+            |           
+            \---public
+                    .htaccess
+                    index.php
+                    

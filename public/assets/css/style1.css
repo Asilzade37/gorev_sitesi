@@ -1,0 +1,91 @@
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #64748b;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+    --dark: #0f172a;
+    --light: #f1f5f9;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+/* Main Content */
+.main-content {
+    min-height: calc(100vh - 70px - 300px);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--light);
+}
+
+.footer h5 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
+
+.footer .bi {
+    font-size: 1.25rem;
+}
+
+/* Utilities */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.card {
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.badge {
+    font-size: 1rem;
+} 
